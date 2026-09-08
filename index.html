@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silicon Electronics | Earth Power Batteries, Inverters & Solar Dealer in Kerala</title>
+    <meta name="description" content="Silicon Electronics — 25 years as a battery and inverter dealer. Earth Power batteries, online UPS, and solar systems. Call +91 85939 97371.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#0E1C24',
+                        navy2: '#152B36',
+                        copper: '#C97C3D',
+                        copperlight: '#E8A860',
+                        amber: '#F2B705',
+                        cream: '#F4F0E6',
+                        ink: '#17201F',
+                        muted: '#5B6B6E',
+                        line: '#E1DBC8',
+                        'brand-green': '#10B981',
+                        'brand-dark': '#0A3B24'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-cream text-ink font-sans antialiased">
+
+    <!-- NAVBAR -->
+    <header class="bg-navy sticky top-0 z-50 shadow-md">
+        <nav class="max-w-7xl mx-auto px-5 sm:px-8 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-md bg-amber relative flex-shrink-0 flex items-center justify-center">
+                    <svg viewBox="0 0 24 24" class="w-4 h-5 fill-navy">
+                        <path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z" />
+                    </svg>
+                </div>
+                <span class="text-cream font-bold text-base sm:text-lg tracking-tight">SILICON ELECTRONICS</span>
+            </div>
+
+            <!-- Desktop nav -->
+            <ul class="hidden md:flex items-center gap-8 text-sm">
+                <li><a href="#" class="text-amber font-semibold">Home</a></li>
+                <li><a href="#about" class="text-[#C9D3D2] hover:text-white transition-colors">About us</a></li>
+                <li><a href="#products" class="text-[#C9D3D2] hover:text-white transition-colors">Products</a></li>
+                <li><a href="#gallery" class="text-[#C9D3D2] hover:text-white transition-colors">Work gallery</a></li>
+                <li><a href="#contact" class="text-[#C9D3D2] hover:text-white transition-colors">Contact us</a></li>
+            </ul>
+
+            <a href="tel:+918593997371" class="hidden md:inline-block bg-copper text-navy text-sm font-bold px-5 py-2.5 rounded hover:bg-[#b06a32] transition whitespace-nowrap">
+                +91 85939 97371
+            </a>
+
+            <!-- Mobile hamburger -->
+            <button id="menu-btn" onclick="toggleMenu()" aria-label="Open menu" class="md:hidden text-cream w-9 h-9 flex items-center justify-center focus:outline-none">
+                <svg id="icon-open" class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                    <path d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <svg id="icon-close" class="w-7 h-7 hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                    <path d="M6 6l12 12M18 6 6 18" />
+                </svg>
+            </button>
+        </nav>
+
+        <!-- Mobile menu panel -->
+        <div id="mobile-menu" class="hidden md:hidden bg-navy2 border-t border-gray-700 px-5 py-4">
+            <ul class="text-sm space-y-4">
+                <li><a href="#" class="text-amber font-semibold block">Home</a></li>
+                <li><a href="#about" class="text-[#C9D3D2] block">About us</a></li>
+                <li><a href="#products" class="text-[#C9D3D2] block">Products</a></li>
+                <li><a href="#gallery" class="text-[#C9D3D2] block">Work gallery</a></li>
+                <li><a href="#contact" class="text-[#C9D3D2] block">Contact us</a></li>
+                <li class="pt-2">
+                    <a href="tel:+918593997371" class="block text-center bg-copper text-navy text-sm font-bold px-4 py-3 rounded">Call +91 85939 97371</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="relative overflow-hidden bg-navy">
+            <!-- Illustrated solar field background -->
+            <svg class="absolute inset-0 w-full h-full object-cover" viewBox="0 0 1280 760" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0" stop-color="#0E1C24" />
+                        <stop offset="0.55" stop-color="#3A2F1E" />
+                        <stop offset="1" stop-color="#C97C3D" />
+                    </linearGradient>
+                    <radialGradient id="sun" cx="0.5" cy="0.5" r="0.5">
+                        <stop offset="0" stop-color="#F2B705" />
+                        <stop offset="1" stop-color="#F2B705" stop-opacity="0" />
+                    </radialGradient>
+                </defs>
+                <rect width="1280" height="760" fill="url(#sky)" />
+                <circle cx="980" cy="330" r="220" fill="url(#sun)" />
+                <circle cx="980" cy="330" r="60" fill="#F2B705" opacity="0.85" />
+                <path d="M0 470 C 220 420, 420 460, 640 440 C 900 415, 1100 450, 1280 430 L1280 760 L0 760 Z" fill="#152B36" opacity="0.9" />
+                <g opacity="0.95">
+                    <g fill="#0E1C24" stroke="#3A5560" stroke-width="1.5">
+                        <polygon points="-40,760 260,760 210,600 -80,600" />
+                        <polygon points="300,760 600,760 530,600 260,600" />
+                        <polygon points="640,760 940,760 850,600 550,600" />
+                        <polygon points="980,760 1320,760 1170,600 850,600" />
+                    </g>
+                    <g stroke="#2A4650" stroke-width="1">
+                        <line x1="-20" y1="700" x2="1290" y2="670" />
+                        <line x1="20" y1="640" x2="1250" y2="618" />
+                    </g>
+                    <g fill="#0E1C24" stroke="#3A5560" stroke-width="1" opacity="0.85">
+                        <polygon points="60,600 260,600 230,520 90,520" />
+                        <polygon points="290,600 490,600 445,520 275,520" />
+                        <polygon points="520,600 720,600 660,520 460,520" />
+                        <polygon points="750,600 950,600 875,520 655,520" />
+                        <polygon points="980,600 1180,600 1090,520 870,520" />
+                    </g>
+                    <g fill="#152B36" stroke="#3A5560" stroke-width="0.7" opacity="0.7">
+                        <polygon points="150,520 300,520 280,470 165,470" />
+                        <polygon points="320,520 470,520 440,470 335,470" />
+                        <polygon points="490,520 640,520 600,470 460,470" />
+                        <polygon points="660,520 810,520 760,470 620,470" />
+                        <polygon points="830,520 980,520 920,470 780,470" />
+                    </g>
+                </g>
+            </svg>
+            
+            <!-- Overlay for text contrast -->
+            <div class="absolute inset-0 bg-gradient-to-t from-navy via-navy/85 to-navy/40"></div>
+
+            <div class="relative z-10 max-w-7xl mx-auto px-5 sm:px-8 pt-14 sm:pt-20 pb-16">
+                <div class="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
+                    <div class="flex-1 min-w-0">
+                        <div class="flex items-center text-amber text-xs sm:text-sm font-bold tracking-wide mb-5">
+                            <span class="w-6 h-0.5 bg-amber mr-2.5"></span>BATTERY, INVERTER &amp; SOLAR DEALER SINCE 2001
+                        </div>
+                        <h1 class="text-cream font-bold text-3xl sm:text-4xl lg:text-5xl leading-tight">
+                            Power that stays on <span class="text-copperlight">when the grid doesn't.</span>
+                        </h1>
+                        <p class="text-[#AEBBB9] text-sm sm:text-base mt-4 max-w-lg leading-relaxed">
+                            Earth Power batteries, inverters, online UPS and solar systems — trusted power-backup dealer. 25 years of service in keeping your spaces lit.
+                        </p>
+                        <div class="flex flex-wrap items-center gap-5 mt-8">
+                            <button id="btn-quote" class="bg-amber hover:bg-yellow-400 text-navy px-7 py-3.5 rounded font-bold text-sm transition">
+                                Get a free quote
+                            </button>
+                            <a href="tel:+918593997371" class="flex items-center text-cream hover:text-copperlight font-bold text-sm transition">
+                                <svg viewBox="0 0 24 24" class="w-4 h-4 mr-2 fill-current">
+                                    <path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1L6.6 10.8z" />
+                                </svg>
+                                +91 85939 97371
+                            </a>
+                        </div>
+                        <div class="flex flex-wrap gap-4 mt-12">
+                            <div class="flex-1 min-w-[130px] bg-navy2/90 border border-copperlight/20 rounded-md p-4 backdrop-blur-sm">
+                                <div class="text-amber text-xl sm:text-2xl font-bold">25 yrs</div>
+                                <div class="text-[#9FADAB] text-xs mt-1">In power backup solutions</div>
+                            </div>
+                            <div class="flex-1 min-w-[130px] bg-navy2/90 border border-copperlight/20 rounded-md p-4 backdrop-blur-sm">
+                                <div class="text-amber text-xl sm:text-2xl font-bold">12 yrs</div>
+                                <div class="text-[#9FADAB] text-xs mt-1">Authorised battery dealer</div>
+                            </div>
+                            <div class="flex-1 min-w-[130px] bg-navy2/90 border border-copperlight/20 rounded-md p-4 backdrop-blur-sm">
+                                <div class="text-amber text-xl sm:text-2xl font-bold">1000+</div>
+                                <div class="text-[#9FADAB] text-xs mt-1">Installations across Kerala</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Earth Power Battery Image Placeholder -->
+                    <div class="flex-shrink-0 w-full max-w-[280px] sm:max-w-[350px] mx-auto lg:mx-0">
+                        <img src="https://res.cloudinary.com/dwhpwlk5m/image/upload/v1786176677/walkers/products/product_1786176676688_czja6.png" alt="Earth Power Inverter Battery Unit" class="w-full h-auto drop-shadow-2xl rounded-xl object-contain">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="flex flex-col md:flex-row bg-cream">
+            <div class="md:flex-[1.1] py-14 sm:py-20 px-5 sm:px-8">
+                <div class="max-w-7xl mx-auto md:mr-0 md:ml-auto md:pr-10 lg:pr-14 md:max-w-none md:w-full">
+                    <div class="text-copper font-bold text-xs tracking-wide mb-3.5">ABOUT US</div>
+                    <h2 class="text-2xl sm:text-3xl font-bold leading-snug max-w-md">A family-run power backup business, trusted for a quarter century.</h2>
+                    <p class="text-muted text-sm sm:text-base leading-relaxed mt-5 max-w-md">
+                        Silicon Electronics has spent 25 years keeping homes and businesses running through every outage. We pair trusted brands with honest advice &mdash; helping you choose the right backup for your home, shop or office, not just the most expensive one.
+                    </p>
+                    <div class="inline-flex items-center mt-6 border border-line rounded-full px-2 pr-4.5 py-2 bg-white text-black shadow-sm">
+                        <div class="w-[34px] h-[34px] rounded-full bg-navy text-amber flex items-center justify-center font-bold text-xs mr-2.5">
+                            25
+                        </div>
+                        <div class="text-xs font-bold pr-2">Years of&nbsp;excellence</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="md:flex-1 bg-navy2 text-cream py-14 sm:py-20 px-5 sm:px-8">
+                <div class="max-w-7xl mx-auto md:ml-0 md:mr-auto md:pl-10 lg:pl-14 md:max-w-none md:w-full">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-10">
+                        <div class="w-full md:w-auto md:border-l-4 border-brand-green md:pl-8">
+                            <h3 class="text-xl font-bold mb-4 text-cream">We provide all types of backup solutions:</h3>
+                            <ul class="space-y-3 text-[#9FADAB]">
+                                <li class="flex items-center gap-2"><span>✅</span> UPS</li>
+                                <li class="flex items-center gap-2"><span>✅</span> INVERTERS</li>
+                                <li class="flex items-center gap-2"><span>✅</span> ONLINE UPS</li>
+                                <li class="flex items-center gap-2"><span>✅</span> SOLAR SYSTEMS</li>
+                                <li class="flex items-center gap-2"><span>✅</span> Lithium ion battery</li>
+                                <li class="flex items-center gap-2"><span>✅</span> Solar lights</li>
+                            </ul>
+                        </div>
+                        <div class="flex-shrink-0 flex justify-center md:justify-end md:pr-12">
+                            <div class="w-36 h-36 rounded-full bg-[#0a3822] border-[5px] border-[#0bc77f] flex flex-col items-center justify-center text-white font-bold text-center shadow-[0_5px_15px_rgba(0,0,0,0.35)] p-2">
+                                <span class="text-lg tracking-wide leading-none mb-1">25 YEARS</span>
+                                <span class="text-sm leading-none mb-1">OF</span>
+                                <span class="text-sm tracking-wide leading-none">EXCELLENCE</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CATEGORIES -->
+        <section id="products" class="py-14 sm:py-20 px-5 sm:px-8">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-end gap-4 mb-9">
+                    <h2 class="text-2xl sm:text-[27px] font-bold max-w-sm">Browse by category</h2>
+                    <p class="text-ink font-medium max-w-xs leading-relaxed text-sm">
+                        Every product line we carry, organised so you can find the right backup fast.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                    <a href="batteries-category.html"><article class="bg-white border border-line rounded-lg p-7 hover:shadow-md transition">
+                        <div class="w-[52px] h-[52px] rounded-lg bg-navy flex items-center justify-center mb-5">
+                            <svg viewBox="0 0 24 24" class="w-6 h-6" fill="none">
+                                <rect x="10" y="2" width="4" height="3" fill="#F2B705" />
+                                <rect x="4" y="5" width="16" height="17" rx="2" fill="#F2B705" />
+                                <rect x="7" y="9" width="10" height="9" rx="1" fill="#0E1C24" />
+                                <rect x="8.5" y="11" width="7" height="1.6" fill="#F2B705" />
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-bold mb-2">Batteries</h3>
+                        <p class="text-sm text-muted leading-relaxed mb-4">Earth Power and lithium-ion batteries for inverters, UPS and solar setups.</p>
+                        <p class="text-sm font-bold text-copper hover:text-[#b06a32]">View batteries &rarr;
+                    </article></p></a>
+                    
+                    <article class="bg-white border border-line rounded-lg p-7 hover:shadow-md transition">
+                        <div class="w-[52px] h-[52px] rounded-lg bg-navy flex items-center justify-center mb-5">
+                            <svg viewBox="0 0 24 24" class="w-6 h-6" fill="none">
+                                <rect x="4" y="3" width="16" height="18" rx="2" fill="#F2B705" />
+                                <rect x="7" y="6" width="10" height="7" rx="1" fill="#0E1C24" />
+                                <path d="M13.5 7.5 10 11h1.7l-1 3 3.3-3.5h-1.7z" fill="#F2B705" />
+                                <circle cx="9" cy="17" r="1.2" fill="#0E1C24" />
+                                <circle cx="15" cy="17" r="1.2" fill="#0E1C24" />
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-bold mb-2">Inverters &amp; UPS</h3>
+                        <p class="text-sm text-muted leading-relaxed mb-4">Home inverters and online UPS systems for uninterrupted power.</p>
+                        <a href="#" class="text-sm font-bold text-copper hover:text-[#b06a32]">View inverters &rarr;</a>
+                    </article>
+                    
+                    <article class="bg-white border border-line rounded-lg p-7 hover:shadow-md transition">
+                        <div class="w-[52px] h-[52px] rounded-lg bg-navy flex items-center justify-center mb-5">
+                            <svg viewBox="0 0 24 24" class="w-6 h-6" fill="none">
+                                <circle cx="12" cy="6" r="2.4" fill="#F2B705" />
+                                <path d="M12 1v1.6M12 8.4V10M7.5 3.5 8.5 4.7M15.5 3.5l-1 1.2M5 6h1.6M17.4 6H19" stroke="#F2B705" stroke-width="1.3" stroke-linecap="round" />
+                                <rect x="4" y="13" width="16" height="8" rx="1" fill="#F2B705" />
+                                <path d="M4 13h16M8 13v8M12 13v8M16 13v8" stroke="#0E1C24" stroke-width="0.8" />
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-bold mb-2">Solar systems</h3>
+                        <p class="text-sm text-muted leading-relaxed mb-4">Solar panels and solar lights for lower bills and backup power.</p>
+                        <a href="#" class="text-sm font-bold text-copper hover:text-[#b06a32]">View solar range &rarr;</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALLERY -->
+        <section id="gallery" class="bg-navy py-14 sm:py-20 px-5 sm:px-8">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-end gap-4 mb-9">
+                    <h2 class="text-2xl sm:text-[27px] font-bold text-cream">Work gallery</h2>
+                    <p class="text-[#9FADAB] text-sm max-w-xs leading-relaxed">
+                        A look at recent installations and shop stock.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 auto-rows-[200px]">
+                    <!-- Item 1 -->
+                    <article class="relative overflow-hidden sm:row-span-2 rounded-lg border border-copperlight/20 group h-full">
+                        <img src="https://5.imimg.com/data5/SELLER/Default/2023/3/297032729/AQ/BO/JG/52427049/inverter-installation-service.jpeg" alt="Inverter installation process" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/20 to-transparent"></div>
+                        <div class="relative z-10 flex items-end w-full h-full p-5">
+                            <span class="text-[#C9D3D2] font-semibold text-sm drop-shadow-md">Inverter installation</span>
+                        </div>
+                    </article>
+
+                    <!-- Item 2 -->
+                    <article class="relative overflow-hidden rounded-lg border border-copperlight/20 group">
+                        <img src="https://res.cloudinary.com/dwhpwlk5m/image/upload/v1786174524/walkers/products/product_1786174523510_y2ll4.png" alt="Battery compartment details" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/20 to-transparent"></div>
+                        <div class="relative z-10 flex items-end w-full h-full p-5">
+                            <span class="text-[#C9D3D2] font-semibold text-sm drop-shadow-md">Battery compartment</span>
+                        </div>
+                    </article>
+
+                    <!-- Item 3 -->
+                    <article class="relative overflow-hidden rounded-lg border border-copperlight/20 group">
+                        <img src="https://www.loomsolar.com/cdn/shop/articles/off_grid_solar_system_18-10_2bdb01a6-6484-44c6-9379-ab0cf168f15c_800x.jpg?v=1698404505" alt="Roof solar installation" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/20 to-transparent"></div>
+                        <div class="relative z-10 flex items-end w-full h-full p-5">
+                            <span class="text-[#C9D3D2] font-semibold text-sm drop-shadow-md">Roof Array</span>
+                        </div>
+                    </article>
+
+                    <!-- Item 4 -->
+                    <article class="relative overflow-hidden rounded-lg border border-copperlight/20 group">
+                        <img src="https://cdn.britannica.com/91/222691-050-E8BDF226/installing-solar-panels.jpg" alt="Solar panel setup in progress" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/20 to-transparent"></div>
+                        <div class="relative z-10 flex items-end w-full h-full p-5">
+                            <span class="text-[#C9D3D2] font-semibold text-sm drop-shadow-md">Solar panel setup</span>
+                        </div>
+                    </article>
+
+                    <!-- Item 5 -->
+                    <article class="relative overflow-hidden rounded-lg border border-copperlight/20 group">
+                        <img src="https://d3nut88kxhmnud.cloudfront.net/2025/11/transformerless-hybrid-inverter.png" alt="Online UPS unit configuration" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/20 to-transparent"></div>
+                        <div class="relative z-10 flex items-end w-full h-full p-5">
+                            <span class="text-[#C9D3D2] font-semibold text-sm drop-shadow-md">Online UPS unit</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT STRIP -->
+        <section id="contact-strip" class="bg-copper py-10 px-5 sm:px-8">
+            <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+                <div>
+                    <h2 class="text-navy text-xl sm:text-2xl font-bold">Need a battery or inverter today?</h2>
+                    <p class="text-[#5C3313] text-sm md:text-base mt-2">
+                        Call us or drop by the shop &mdash; same-day installation available in nearby areas.
+                    </p>
+                </div>
+                <a href="tel:+918593997371" class="bg-navy hover:bg-navy2 text-amber px-8 py-3.5 rounded font-bold text-sm whitespace-nowrap shadow-md transition">
+                    Call +91 85939 97371
+                </a>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section id="contact" class="py-16 bg-navy2 px-5 sm:px-8">
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-gray-300 rounded-2xl shadow-xl overflow-hidden">
+                    <div class="p-8 md:p-12">
+                        <h2 class="text-3xl font-bold mb-8 text-center text-brand-dark">Contact Us</h2>
+                        <form action="#" method="POST" class="space-y-6 max-w-2xl mx-auto">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1.5">Name</label>
+                                <input type="text" class="w-full border border-gray-400 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-green focus:border-brand-green transition" required>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1.5">Contact No.</label>
+                                <input type="tel" class="w-full border border-gray-400 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-green focus:border-brand-green transition" required>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1.5">Email ID</label>
+                                <input type="email" class="w-full border border-gray-400 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-green focus:border-brand-green transition" required>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1.5">Message</label>
+                                <textarea rows="4" class="w-full border border-gray-400 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-green focus:border-brand-green transition resize-none" required></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-brand-green hover:bg-emerald-600 text-dark font-bold py-4 px-4 rounded-lg transition duration-200 shadow-md">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-navy2 text-[#9FADAB] pt-14 pb-8 px-5 sm:px-8 border-t-[6px] border-amber">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 pb-10 border-b border-white/10">
+                <div class="lg:col-span-1">
+                    <div class="flex items-center mb-4 gap-3">
+                        <div class="w-5 h-5 rounded bg-amber flex-shrink-0"></div>
+                        <span class="text-cream font-bold text-sm tracking-wide">SILICON ELECTRONICS</span>
+                    </div>
+                    <p class="text-[13px] leading-relaxed text-[#93A19F]">
+                        Paruvakkunnu Road, Perumpilavu<br>
+                        Thrissur, Kerala &ndash; 680519
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-cream text-sm font-bold mb-4">Products</h3>
+                    <ul class="text-[13px] space-y-2 text-[#93A19F]">
+                        <li><a href="#" class="hover:text-amber">Batteries</a></li>
+                        <li><a href="#" class="hover:text-amber">Inverters &amp; UPS</a></li>
+                        <li><a href="#" class="hover:text-amber">Solar systems</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-cream text-sm font-bold mb-4">Company</h3>
+                    <ul class="text-[13px] space-y-2 text-[#93A19F]">
+                        <li><a href="#about" class="hover:text-amber">About us</a></li>
+                        <li><a href="#gallery" class="hover:text-amber">Work gallery</a></li>
+                        <li><a href="#contact" class="hover:text-amber">Contact us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-cream text-sm font-bold mb-4">Contact</h3>
+                    <ul class="text-[13px] space-y-2 text-[#93A19F]">
+                        <li><a href="tel:+918593997371" class="hover:text-amber">+91 85939 97371</a></li>
+                        <li>Mon&ndash;Sat, 10am&ndash;7pm</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-6 text-[12px] flex flex-col sm:flex-row justify-between gap-3 text-center sm:text-left">
+                <span>&copy; 2026 Silicon Electronics. All rights reserved.</span>
+                <span>25 years of powering Kerala</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Tailwind 30-Second Lead Capture Modal -->
+    <div id="leadModal" class="hidden fixed inset-0 z-[100] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4 transition-opacity">
+        <div class="bg-white rounded-xl shadow-2xl p-6 sm:p-8 max-w-md w-full relative">
+            <!-- Close Button -->
+            <button id="closeModalBtn" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 focus:outline-none transition">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+
+            <!-- Form Content -->
+            <div class="text-center">
+                <h4 class="text-2xl font-bold text-[#0A3B24] mb-3">Need a Power Backup Quote?</h4>
+                <p class="text-gray-500 mb-6 text-sm">Enter your phone number and we'll call you right back with the best pricing.</p>
+                <form onsubmit="event.preventDefault(); alert('Request submitted!'); document.getElementById('leadModal').classList.add('hidden');">
+                    <input type="tel" class="w-full px-4 py-3 border border-gray-300 rounded-lg mb-4 focus:ring-2 focus:ring-[#10B981] focus:border-[#10B981] outline-none text-ink bg-gray-50" placeholder="+91 Your Phone Number" required>
+                    <button type="submit" class="w-full bg-[#10B981] hover:bg-green-500 text-white font-bold py-3 px-4 rounded-lg transition-colors shadow-md">
+                        Get a Free Call Back
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // Modal Logic
+        const modal = document.getElementById('leadModal');
+        const closeBtn = document.getElementById('closeModalBtn');
+        const quoteBtn = document.getElementById('btn-quote');
+
+        function showModal() {
+            modal.classList.remove('hidden');
+        }
+
+        function hideModal() {
+            modal.classList.add('hidden');
+        }
+
+        // Trigger via hero button
+        if(quoteBtn) {
+            quoteBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                showModal();
+            });
+        }
+
+        // Test Timer: Pops up after 20 seconds
+        setTimeout(function () {
+            showModal();
+        }, 20000);
+
+        // Close modal when X is clicked
+        closeBtn.addEventListener('click', hideModal);
+
+        // Close modal when clicking outside
+        modal.addEventListener('click', function (event) {
+            if (event.target === modal) {
+                hideModal();
+            }
+        });
+
+        // Mobile Menu Logic
+        function toggleMenu() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+            document.getElementById('icon-open').classList.toggle('hidden');
+            document.getElementById('icon-close').classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
