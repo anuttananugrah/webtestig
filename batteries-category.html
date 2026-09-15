@@ -8,27 +8,7 @@
     <meta name="description"
         content="Silicon Electronics — 25 years as a battery and inverter dealer. Earth Power batteries, online UPS, and solar systems. Call +91 85939 97371.">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        copper: '#C97C3D',
-                        copperlight: '#E8A860',
-                        navy: '#0E1C24',
-                        amber: '#F2B705',
-                        navy2: '#152B36',
-                        cream: '#F4F0E6',
-                        ink: '#17201F',
-                        muted: '#5B6B6E',
-                        line: '#E1DBC8',
-                        'brand-green': '#10B981',
-                        'brand-dark': '#0A3B24'
-                    }
-                }
-            }
-        }
-    </script>
+
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -57,6 +37,7 @@
     <meta property="og:description"
         content="25 years as a trusted battery and inverter dealer in Kerala. Earth Power batteries, online UPS, and solar systems." />
     <meta property="og:image" content="URL_TO_YOUR_PREVIEW_IMAGE.jpg" />
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="bg-cream text-ink font-sans antialiased">
@@ -77,10 +58,10 @@
             <!-- Desktop nav -->
             <ul class="hidden md:flex items-center gap-8 text-sm">
                 <li><a href="index.html" class="text-copper font-semibold">Home</a></li>
-                <li><a href="#about" class="text-slate-600 hover:text-copper transition-colors">About us</a></li>
-                <li><a href="#products" class="text-slate-600 hover:text-copper transition-colors">Products</a></li>
-                <li><a href="#gallery" class="text-slate-600 hover:text-copper transition-colors">Work gallery</a></li>
-                <li><a href="#contact" class="text-slate-600 hover:text-copper transition-colors">Contact us</a></li>
+                <li><a href="index.html#about" class="text-slate-600 hover:text-copper transition-colors">About us</a></li>
+                <li><a href="index.html#products" class="text-slate-600 hover:text-copper transition-colors">Products</a></li>
+                <li><a href="index.html#gallery" class="text-slate-600 hover:text-copper transition-colors">Work gallery</a></li>
+                <li><a href="index.html#contact" class="text-slate-600 hover:text-copper transition-colors">Contact us</a></li>
             </ul>
 
             <a href="tel:+918593997371"
@@ -106,10 +87,10 @@
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 px-5 py-4 shadow-lg">
             <ul class="text-sm space-y-4">
                 <li><a href="index.html" class="text-copper font-semibold block">Home</a></li>
-                <li><a href="#about" class="text-slate-600 block">About us</a></li>
-                <li><a href="#products" class="text-slate-600 block">Products</a></li>
-                <li><a href="#gallery" class="text-slate-600 block">Work gallery</a></li>
-                <li><a href="#contact" class="text-slate-600 block">Contact us</a></li>
+                <li><a href="index.html#about" class="text-slate-600 block">About us</a></li>
+                <li><a href="index.html#products" class="text-slate-600 block">Products</a></li>
+                <li><a href="index.html#gallery" class="text-slate-600 block">Work gallery</a></li>
+                <li><a href="index.html#contact" class="text-slate-600 block">Contact us</a></li>
                 <li class="pt-2">
                     <a href="tel:+918593997371"
                         class="block text-center bg-copper text-white text-sm font-bold px-4 py-3 rounded shadow-sm">Call
@@ -121,15 +102,15 @@
 
     <main>
         <!-- PAGE HEAD -->
-        <section class="bg-navy py-10 md:py-12">
+        <section class="bg-cream py-10 md:py-12">
             <div class="max-w-7xl mx-auto px-5 md:px-10">
                 <nav class="text-[#8FA6A0] text-[13px] mb-4" aria-label="Breadcrumb">
-                    <a href="index.html" class="hover:text-white">Home</a> /
-                    <a href="./batteries-category.html" class="hover:text-white">Products</a> /
+                    <a href="index.html" class="hover:text-dark">Home</a> /
+                    <a href="./batteries-category.html" class="hover:text-dark">Products</a> /
                     <span class="text-amber">Batteries</span>
                 </nav>
-                <h1 class="text-cream text-3xl md:text-4xl font-bold mb-3">Earth Power & LiFePO4 batteries</h1>
-                <p class="text-[#AEBBB9] text-sm md:text-[15px] max-w-2xl leading-relaxed">
+                <h1 class="text-dark text-3xl md:text-4xl font-bold mb-3">Earth Power & LiFePO4 batteries</h1>
+                <p class="text-[#AEBBB9] text-sm md:text-[15px] max-w-2xl leading-relaxed text-bold">
                     Genuine Earth Power lithium-ion batteries for inverters, UPS and solar setups &mdash; all backed by
                     manufacturer warranty and our own after-sales support.
                 </p>
@@ -150,15 +131,63 @@
         </div>
 
         <!-- FILTERS -->
-        <!-- <section class="py-6 md:py-8 border-b border-line">
-            <div class="max-w-7xl mx-auto px-5 md:px-10 flex items-center flex-wrap gap-3" >
+        <section class="py-6 md:py-8 border-b border-line">
+            <div class="max-w-7xl mx-auto px-5 md:px-10 flex items-center flex-wrap gap-3">
                 <span class="text-[13px] text-muted mr-2">Filter by voltage:</span>
-                <button class="bg-navy border border-navy text-amber text-[13px] py-1.5 px-4 rounded-full font-medium">All</button>
-                <button class="bg-white border border-line text-ink hover:bg-gray-50 text-[13px] py-1.5 px-4 rounded-full transition">12V</button>
-                <button class="bg-white border border-line text-ink hover:bg-gray-50 text-[13px] py-1.5 px-4 rounded-full transition">25V</button>
-                <button class="bg-white border border-line text-ink hover:bg-gray-50 text-[13px] py-1.5 px-4 rounded-full transition">51.2V</button>
+                <button
+                    class="bg-navy border border-navy text-amber text-[13px] py-1.5 px-4 rounded-full font-medium">All</button>
+                <button
+                    class="bg-white border border-line text-ink hover:bg-gray-50 text-[13px] py-1.5 px-4 rounded-full transition">12.8V</button>
+                <button
+                    class="bg-white border border-line text-ink hover:bg-gray-50 text-[13px] py-1.5 px-4 rounded-full transition">25.6V</button>
+                <button
+                    class="bg-white border border-line text-ink hover:bg-gray-50 text-[13px] py-1.5 px-4 rounded-full transition">51.2V</button>
             </div>
-        </section> -->
+        </section>
+        <section class="py-6 md:py-8 border-b border-line">
+            <div class="max-w-7xl mx-auto px-5 md:px-10 flex flex-wrap items-center gap-3">
+
+                <!-- Voltage Filter -->
+                <span class="text-[13px] text-muted mr-1">
+                    Voltage:
+                </span>
+
+                <button class="filter-btn voltage-filter active-filter" data-voltage="all">
+                    All
+                </button>
+
+                <button class="filter-btn voltage-filter" data-voltage="12.8">
+                    12.8V
+                </button>
+
+                <button class="filter-btn voltage-filter" data-voltage="25.6">
+                    25.6V
+                </button>
+
+                <button class="filter-btn voltage-filter" data-voltage="51.2">
+                    51.2V
+                </button>
+
+
+                <!-- Ah Filter -->
+                <span class="text-[13px] text-muted ml-4 mr-1">
+                    Capacity:
+                </span>
+
+                <button class="filter-btn ah-filter active-filter" data-ah="all">
+                    All
+                </button>
+
+                <button class="filter-btn ah-filter" data-ah="105">
+                    105Ah
+                </button>
+
+                <button class="filter-btn ah-filter" data-ah="210">
+                    210Ah
+                </button>
+
+            </div>
+        </section>
 
         <!-- PRODUCT LIST -->
         <section class="py-8 md:py-16">
@@ -166,12 +195,14 @@
 
                 <!-- Product 1 -->
                 <article
-                    class="flex flex-col md:flex-row bg-white border border-line rounded-xl overflow-hidden shadow-sm hover:shadow-md transition">
+                    class="product-card flex flex-col md:flex-row bg-white border border-line rounded-xl overflow-hidden shadow-sm hover:shadow-md transition"
+                    data-voltage="12.8" data-ah="105">
                     <div
                         class="w-full md:w-[280px] flex-shrink-0 bg-navy p-6 flex items-center justify-center relative min-h-[220px]">
                         <!-- <span class="absolute top-4 left-4 bg-amber text-navy text-[11px] font-bold py-1 px-3 rounded-full">In stock</span> -->
                         <!-- Earth Power Battery Image -->
-                        <img src="./images/main.jpg">
+                        <img src="./images/main.jpg" alt="Earth Power 12V 210Ah LiFePO4 battery"
+                            class="w-full h-70 object-contain drop-shadow-xl" loading="lazy">
                     </div>
                     <div class="flex-1 p-6 md:p-8 flex flex-col justify-between">
                         <div>
@@ -211,7 +242,7 @@
                         <div class="mt-6 pt-5 border-t border-line flex items-center justify-between flex-wrap gap-4">
                             <span class="text-[13px] text-muted">Ask in-store for current pricing</span>
                             <button
-                                class="btn-know bg-navy hover:bg-navy2 text-amber text-[13.5px] font-bold py-2.5 px-6 rounded-md transition">Know
+                                class="btn-know bg-cream hover:bg-amber text-dark text-[13.5px] font-bold py-2.5 px-6 rounded-md transition">Know
                                 more</button>
                         </div>
                     </div>
@@ -219,11 +250,12 @@
 
                 <!-- Product 2 -->
                 <article
-                    class="flex flex-col md:flex-row bg-white border border-line rounded-xl overflow-hidden shadow-sm hover:shadow-md transition">
+                    class="product-card flex flex-col md:flex-row bg-white border border-line rounded-xl overflow-hidden shadow-sm hover:shadow-md transition"
+                    data-voltage="12.8" data-ah="210">
                     <div
                         class="w-full md:w-[280px] flex-shrink-0 bg-navy p-6 flex items-center justify-center relative min-h-[220px]">
                         <img src="images/smbt1.jpg" alt="Earth Power 12V 210Ah LiFePO4 battery"
-                            class="w-full h-48 object-contain drop-shadow-xl" loading="lazy">
+                            class="w-full h-70 object-contain drop-shadow-xl" loading="lazy">
                     </div>
                     <div class="flex-1 p-6 md:p-8 flex flex-col justify-between">
                         <div>
@@ -262,7 +294,7 @@
                         <div class="mt-6 pt-5 border-t border-line flex items-center justify-between flex-wrap gap-4">
                             <span class="text-[13px] text-muted">Ask in-store for current pricing</span>
                             <button
-                                class="btn-know bg-navy hover:bg-navy2 text-amber text-[13.5px] font-bold py-2.5 px-6 rounded-md transition">Know
+                                class="btn-know bg-cream hover:bg-amber text-dark text-[13.5px] font-bold py-2.5 px-6 rounded-md transition">Know
                                 more</button>
                         </div>
                     </div>
@@ -270,11 +302,12 @@
 
                 <!-- Product 3 -->
                 <article
-                    class="flex flex-col md:flex-row bg-white border border-line rounded-xl overflow-hidden shadow-sm hover:shadow-md transition">
+                    class="product-card flex flex-col md:flex-row bg-white border border-line rounded-xl overflow-hidden shadow-sm hover:shadow-md transition"
+                    data-voltage="25.6" data-ah="105">
                     <div
                         class="w-full md:w-[280px] flex-shrink-0 bg-navy p-6 flex items-center justify-center relative min-h-[220px]">
                         <img src="images/p2_2.jpg" alt="Earth Power 24V 105Ah LiFePO4 battery"
-                            class="w-full h-48 object-contain drop-shadow-xl" loading="lazy">
+                            class="w-full h-70 object-contain drop-shadow-xl" loading="lazy">
                     </div>
                     <div class="flex-1 p-6 md:p-8 flex flex-col justify-between">
                         <div>
@@ -313,7 +346,7 @@
                         <div class="mt-6 pt-5 border-t border-line flex items-center justify-between flex-wrap gap-4">
                             <span class="text-[13px] text-muted">Ask in-store for current pricing</span>
                             <button
-                                class="btn-know bg-navy hover:bg-navy2 text-amber text-[13.5px] font-bold py-2.5 px-6 rounded-md transition">Know
+                                class="btn-know bg-cream hover:bg-amber text-dark text-[13.5px] font-bold py-2.5 px-6 rounded-md transition">Know
                                 more</button>
                         </div>
                     </div>
@@ -321,11 +354,12 @@
 
                 <!-- Product 4 -->
                 <article
-                    class="flex flex-col md:flex-row bg-white border border-line rounded-xl overflow-hidden shadow-sm hover:shadow-md transition">
+                    class="product-card flex flex-col md:flex-row bg-white border border-line rounded-xl overflow-hidden shadow-sm hover:shadow-md transition"
+                    data-voltage="25.6" data-ah="210">
                     <div
                         class="w-full md:w-[280px] flex-shrink-0 bg-navy p-6 flex items-center justify-center relative min-h-[220px]">
                         <img src="images/4th.jpg" alt="Earth Power 24V 105Ah LiFePO4 battery"
-                            class="w-full h-48 object-contain drop-shadow-xl" loading="lazy">
+                            class="w-full h-70 object-contain drop-shadow-xl" loading="lazy">
                     </div>
                     <div class="flex-1 p-6 md:p-8 flex flex-col justify-between">
                         <div>
@@ -364,7 +398,7 @@
                         <div class="mt-6 pt-5 border-t border-line flex items-center justify-between flex-wrap gap-4">
                             <span class="text-[13px] text-muted">Ask in-store for current pricing</span>
                             <button
-                                class="btn-know bg-navy hover:bg-navy2 text-amber text-[13.5px] font-bold py-2.5 px-6 rounded-md transition">Know
+                                class="btn-know bg-cream hover:bg-amber text-dark text-[13.5px] font-bold py-2.5 px-6 rounded-md transition">Know
                                 more</button>
                         </div>
                     </div>
@@ -372,11 +406,12 @@
 
                 <!-- Product 5 -->
                 <article
-                    class="flex flex-col md:flex-row bg-white border border-line rounded-xl overflow-hidden shadow-sm hover:shadow-md transition">
+                    class="product-card flex flex-col md:flex-row bg-white border border-line rounded-xl overflow-hidden shadow-sm hover:shadow-md transition"
+                    data-voltage="51.2" data-ah="105">
                     <div
                         class="w-full md:w-[280px] flex-shrink-0 bg-navy p-6 flex items-center justify-center relative min-h-[220px]">
                         <img src="images/5th.jpg" alt="Earth Power 24V 105Ah LiFePO4 battery"
-                            class="w-full h-48 object-contain drop-shadow-xl" loading="lazy">
+                            class="w-full h-70 object-contain drop-shadow-xl" loading="lazy">
                     </div>
                     <div class="flex-1 p-6 md:p-8 flex flex-col justify-between">
                         <div>
@@ -415,24 +450,25 @@
                         <div class="mt-6 pt-5 border-t border-line flex items-center justify-between flex-wrap gap-4">
                             <span class="text-[13px] text-muted">Ask in-store for current pricing</span>
                             <button
-                                class="btn-know bg-navy hover:bg-navy2 text-amber text-[13.5px] font-bold py-2.5 px-6 rounded-md transition">Know
+                                class="btn-know bg-cream hover:bg-amber text-dark text-[13.5px] font-bold py-2.5 px-6 rounded-md transition">Know
                                 more</button>
                         </div>
                     </div>
                 </article>
                 <!-- Product 6-->
                 <article
-                    class="flex flex-col md:flex-row bg-white border border-line rounded-xl overflow-hidden shadow-sm hover:shadow-md transition">
+                    class="product-card flex flex-col md:flex-row bg-white border border-line rounded-xl overflow-hidden shadow-sm hover:shadow-md transition"
+                    data-voltage="51.2" data-ah="105">
                     <div
                         class="w-full md:w-[280px] flex-shrink-0 bg-navy p-6 flex items-center justify-center relative min-h-[220px]">
-                        <img src="images/6th.jpg" alt="Earth Power 24V 105Ah LiFePO4 battery"
-                            class="w-full h-48 object-contain drop-shadow-xl" loading="lazy">
+                        <img src="images/parellel battery.png" alt="Earth Power 24V 105Ah LiFePO4 battery"
+                            class="w-full h-70 object-contain drop-shadow-xl" loading="lazy">
                     </div>
                     <div class="flex-1 p-6 md:p-8 flex flex-col justify-between">
                         <div>
                             <div class="flex flex-wrap justify-between items-start gap-3 mb-4">
                                 <div>
-                                    <h2 class="text-xl font-bold text-ink">Earth Power 51.2V 105Ah LiFePO4 battery</h2>
+                                    <h2 class="text-xl font-bold text-ink">Earth Power 51.2V 105Ah LiFePO4 battery | Parallel Communication</h2>
                                     <p class="text-[13px] text-muted mt-1">Model EPL51105ESS</p>
                                 </div>
                                 <span
@@ -456,6 +492,10 @@
                                         class="font-bold text-ink">100A</span></div>
                                 <div class="text-[13px]"><span class="text-muted">Weight: </span><span
                                         class="font-bold text-ink">43.0 KG</span></div>
+                                <div class="text-[13px]"><span class="text-muted">Parallel Communication: </span><span
+                                        class="font-bold text-ink">UP TO 10 BATTERIES.</span></div>
+                                <div class="text-[13px]"><span class="text-muted">Parallel Balancing: </span><span
+                                        class="font-bold text-ink">5A</span></div>
                             </div>
                             <!-- <div class="flex flex-wrap gap-2 mt-5">
                                 <span class="text-[11.5px] bg-cream border border-line text-muted py-1.5 px-3 rounded-full">For 24V inverter systems</span>
@@ -465,7 +505,7 @@
                         <div class="mt-6 pt-5 border-t border-line flex items-center justify-between flex-wrap gap-4">
                             <span class="text-[13px] text-muted">Ask in-store for current pricing</span>
                             <button
-                                class="btn-know bg-navy hover:bg-navy2 text-amber text-[13.5px] font-bold py-2.5 px-6 rounded-md transition">Know
+                                class="btn-know bg-cream hover:bg-amber text-dark text-[13.5px] font-bold py-2.5 px-6 rounded-md transition">Know
                                 more</button>
                         </div>
                     </div>
@@ -504,9 +544,9 @@
                 <div>
                     <h3 class="text-slate-900 text-sm font-bold mb-4">Company</h3>
                     <ul class="text-[13px] space-y-2 text-slate-600">
-                        <li><a href="./index.html" class="hover:text-copper transition">About us</a></li>
-                        <li><a href="./index.html" class="hover:text-copper transition">Work gallery</a></li>
-                        <li><a href="./index.html" class="hover:text-copper transition">Contact us</a></li>
+                        <li><a href="index.html#about" class="hover:text-copper transition">About us</a></li>
+                        <li><a href="index.html#gallery" class="hover:text-copper transition">Work gallery</a></li>
+                        <li><a href="index.html#contact" class="hover:text-copper transition">Contact us</a></li>
                     </ul>
                 </div>
                 <div>
@@ -555,52 +595,8 @@
     </div>
 
     <!-- SCRIPTS -->
-    <script>
-        // Modal functionality
-        const modal = document.getElementById('leadModal');
-        const closeBtn = document.getElementById('closeModalBtn');
-        const knowMoreBtns = document.querySelectorAll('.btn-know');
 
-        // Function to show the modal
-        function showModal() {
-            modal.classList.remove('hidden');
-        }
-
-        // Function to hide the modal
-        function hideModal() {
-            modal.classList.add('hidden');
-        }
-
-        // Attach click events to all "Know more" buttons
-        knowMoreBtns.forEach(btn => {
-            btn.addEventListener('click', function (e) {
-                e.preventDefault(); // Prevent page jump
-                showModal();
-            });
-        });
-
-        // Test Timer: Pops up after 20 seconds
-        setTimeout(function () {
-            showModal();
-        }, 20000);
-
-        // Close modal when the X is clicked
-        closeBtn.addEventListener('click', hideModal);
-
-        // Close modal when clicking on the dark bacKGround outside the white box
-        modal.addEventListener('click', function (event) {
-            if (event.target === modal) {
-                hideModal();
-            }
-        });
-
-        // Mobile Menu Toggle functionality
-        function toggleMenu() {
-            document.getElementById('mobile-menu').classList.toggle('hidden');
-            document.getElementById('icon-open').classList.toggle('hidden');
-            document.getElementById('icon-close').classList.toggle('hidden');
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>

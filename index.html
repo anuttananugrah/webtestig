@@ -579,50 +579,7 @@
     </div>
 
     <!-- Scripts -->
-    <script>
-        // Modal Logic
-        const modal = document.getElementById('leadModal');
-        const closeBtn = document.getElementById('closeModalBtn');
-        const quoteBtn = document.getElementById('btn-quote');
-
-        function showModal() {
-            modal.classList.remove('hidden');
-        }
-
-        function hideModal() {
-            modal.classList.add('hidden');
-        }
-
-        // Trigger via hero button
-        if (quoteBtn) {
-            quoteBtn.addEventListener('click', function (e) {
-                e.preventDefault();
-                showModal();
-            });
-        }
-
-        // Test Timer: Pops up after 20 seconds
-        setTimeout(function () {
-            showModal();
-        }, 20000);
-
-        // Close modal when X is clicked
-        closeBtn.addEventListener('click', hideModal);
-
-        // Close modal when clicking outside
-        modal.addEventListener('click', function (event) {
-            if (event.target === modal) {
-                hideModal();
-            }
-        });
-
-        // Mobile Menu Logic
-        function toggleMenu() {
-            document.getElementById('mobile-menu').classList.toggle('hidden');
-            document.getElementById('icon-open').classList.toggle('hidden');
-            document.getElementById('icon-close').classList.toggle('hidden');
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
