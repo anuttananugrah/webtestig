@@ -57,11 +57,8 @@
     <meta property="og:description"
         content="25 years as a trusted battery and inverter dealer in Kerala. Earth Power batteries, online UPS, and solar systems." />
     <meta property="og:image" content="URL_TO_YOUR_PREVIEW_IMAGE.jpg" />
-    <link 
-  rel="stylesheet" 
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
-  referrerpolicy="no-referrer" 
-/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        referrerpolicy="no-referrer" />
 </head>
 
 <body class="bg-slate-50 text-slate-900 font-sans antialiased">
@@ -88,7 +85,7 @@
                 <li><a href="#contact" class="text-slate-600 hover:text-copper transition-colors">Contact us</a></li>
             </ul>
 
-            <a href="tel:9446874250"
+            <a href="tel:+919446874250"
                 class="hidden md:inline-block bg-copper text-white text-sm font-bold px-5 py-2.5 rounded hover:bg-[#b06a32] transition whitespace-nowrap shadow-sm">
                 +91 94468 74250
             </a>
@@ -219,9 +216,8 @@
                     <!-- Earth Power Battery Image Placeholder -->
                     <a href="#products">
                         <div class="flex-shrink-0 w-full max-w-[280px] sm:max-w-[350px] mx-auto lg:mx-0">
-                            <img src="./images/main.jpg"
-                                alt="Earth Power Inverter Battery Unit" width="350" height="400"
-                                class="w-full h-auto drop-shadow-2xl rounded-xl object-contain">
+                            <img src="./images/main.jpg" alt="Earth Power Inverter Battery Unit" width="350"
+                                height="400" class="w-full h-auto drop-shadow-2xl rounded-xl object-contain">
                         </div>
                     </a>
                 </div>
@@ -293,25 +289,26 @@
                 </div>
                 <div class="flex flex-wrap gap-4 mt-12 max-w-7xl mx-auto  ">
                     <a href="batteries-category.html">
-                    <div class="flex-1 min-w-[130px]  bg-white border border-slate-200 shadow-sm rounded-md p-4 backdrop-blur-sm">
-                        <!-- <div class="text-slate-900 text-xl sm:text-2xl font-bold">25 yrs</div> -->
                         <div
-                            class="w-[52px] h-[52px] rounded-lg bg-slate-100 flex items-center justify-center mb-5 border border-slate-200">
-                            <svg viewBox="0 0 24 24" class="w-6 h-6" fill="none">
+                            class="flex-1 min-w-[130px]  bg-white border border-slate-200 shadow-sm rounded-md p-4 backdrop-blur-sm">
+                            <!-- <div class="text-slate-900 text-xl sm:text-2xl font-bold">25 yrs</div> -->
+                            <div
+                                class="w-[52px] h-[52px] rounded-lg bg-slate-100 flex items-center justify-center mb-5 border border-slate-200">
+                                <svg viewBox="0 0 24 24" class="w-6 h-6" fill="none">
 
-                                <rect x="10" y="2" width="4" height="3" fill="#C97C3D" />
-                                <rect x="4" y="5" width="16" height="17" rx="2" fill="#C97C3D" />
-                                <rect x="7" y="9" width="10" height="9" rx="1" fill="#f8fafc" />
-                                <rect x="8.5" y="11" width="7" height="1.6" fill="#C97C3D" />
-                            </svg>
+                                    <rect x="10" y="2" width="4" height="3" fill="#C97C3D" />
+                                    <rect x="4" y="5" width="16" height="17" rx="2" fill="#C97C3D" />
+                                    <rect x="7" y="9" width="10" height="9" rx="1" fill="#f8fafc" />
+                                    <rect x="8.5" y="11" width="7" height="1.6" fill="#C97C3D" />
+                                </svg>
+                            </div>
+                            <!-- <div class="text-slate-500 text-xs mt-1 font-medium">In power backup solutions</div> -->
+                            <h3 class="text-lg text-slate-900 font-bold mb-2">Batteries</h3>
+                            <p class="text-sm text-slate-600 leading-relaxed mb-4">lithium-ion batteries
+                                for inverters, UPS and solar setups.</p>
+                            <p class="text-sm font-bold text-copper hover:text-[#b06a32]">View batteries &rarr;</p>
+
                         </div>
-                        <!-- <div class="text-slate-500 text-xs mt-1 font-medium">In power backup solutions</div> -->
-                        <h3 class="text-lg text-slate-900 font-bold mb-2">Batteries</h3>
-                        <p class="text-sm text-slate-600 leading-relaxed mb-4">lithium-ion batteries
-                            for inverters, UPS and solar setups.</p>
-                        <p class="text-sm font-bold text-copper hover:text-[#b06a32]">View batteries &rarr;</p>
-
-                    </div>
                     </a>
                     <div
                         class="flex-1 min-w-[130px] bg-white border border-slate-200 shadow-sm rounded-md p-4 backdrop-blur-sm">
@@ -464,32 +461,42 @@
                 <div class="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden">
                     <div class="p-8 md:p-12">
                         <h2 class="text-3xl font-bold mb-8 text-center text-slate-900">Contact Us</h2>
-                        <form action="#" method="POST" class="space-y-6 max-w-2xl mx-auto">
+                        <form id="main-contact-form" class="space-y-6 max-w-2xl mx-auto">
+                            <!-- Web3Forms Subject Line (Optional but helpful) -->
+                            <input type="hidden" name="subject"
+                                value="New Contact Form Submission - Silicon Electronics">
+
                             <div>
                                 <label class="block text-sm font-medium text-slate-700 mb-1.5">Name</label>
-                                <input type="text"
+                                <input type="text" name="name"
                                     class="w-full border border-slate-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-green focus:border-brand-green transition bg-slate-50"
                                     required>
                             </div>
                             <div>
                                 <label class="block text-sm font-medium text-slate-700 mb-1.5">Contact No.</label>
-                                <input type="tel"
+                                <input type="tel" name="phone"
                                     class="w-full border border-slate-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-green focus:border-brand-green transition bg-slate-50"
                                     required>
                             </div>
                             <div>
                                 <label class="block text-sm font-medium text-slate-700 mb-1.5">Email ID</label>
-                                <input type="email"
+                                <input type="email" name="email"
                                     class="w-full border border-slate-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-green focus:border-brand-green transition bg-slate-50"
                                     required>
                             </div>
                             <div>
                                 <label class="block text-sm font-medium text-slate-700 mb-1.5">Message</label>
-                                <textarea rows="4"
+                                <textarea name="message" rows="4"
                                     class="w-full border border-slate-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-green focus:border-brand-green transition resize-none bg-slate-50"
                                     required></textarea>
                             </div>
-                            <button type="submit"
+                            <!-- Web3Forms Honeypot Spam Protection (Bots will fill this, humans won't see it) -->
+                            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                            <!-- Status Message Container -->
+                            <p id="main-form-status" class="text-center font-bold text-sm hidden"></p>
+
+                            <button type="submit" id="main-submit-btn"
                                 class="w-full bg-brand-green hover:bg-emerald-600 text-white font-bold py-4 px-4 rounded-lg transition duration-200 shadow-md">
                                 Send Message
                             </button>
@@ -505,16 +512,17 @@
         <div class="max-w-7xl mx-auto">
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 pb-10 border-b border-slate-200">
                 <div class="lg:col-span-1">
-                    <a href="https://maps.app.goo.gl/LDfQqXvSqRnRNBAs8"><div class="flex items-center mb-4 gap-3">
-                        <div class="w-5 h-5 rounded bg-amber flex-shrink-0"></div>
-                        <span class="text-slate-900 font-bold text-sm tracking-wide">SILICON ELECTRONICS</span>
-                    </div>
-                    <i class="fa-solid fa-map-pin"></i>
-                    <p class="text-[13px] leading-relaxed text-slate-600">
-                        Paruvakkunnu Road, Perumpilavu<br>
-                        Thrissur, Kerala &ndash; 680519
-                    </p>
-                </a>
+                    <a href="https://maps.app.goo.gl/LDfQqXvSqRnRNBAs8">
+                        <div class="flex items-center mb-4 gap-3">
+                            <div class="w-5 h-5 rounded bg-amber flex-shrink-0"></div>
+                            <span class="text-slate-900 font-bold text-sm tracking-wide">SILICON ELECTRONICS</span>
+                        </div>
+                        <i class="fa-solid fa-map-pin"></i>
+                        <p class="text-[13px] leading-relaxed text-slate-600">
+                            Paruvakkunnu Road, Perumpilavu<br>
+                            Thrissur, Kerala &ndash; 680519
+                        </p>
+                    </a>
                 </div>
                 <div>
                     <h3 class="text-slate-900 text-sm font-bold mb-4">Products</h3>
@@ -560,22 +568,35 @@
             </button>
 
             <!-- Form Content -->
+            <!-- Form Content -->
             <div class="text-center">
-                <h4 class="text-2xl font-bold text-slate-900 mb-3">Need a Power Backup Quote?</h4>
-                <p class="text-slate-500 mb-6 text-sm">Enter your phone number and we'll call you right back with the
-                    best pricing.</p>
-                <form
-                    onsubmit="event.preventDefault(); alert('Request submitted!'); document.getElementById('leadModal').classList.add('hidden');">
-                    <input type="tel"
-                        class="w-full px-4 py-3 border border-slate-300 rounded-lg mb-4 focus:ring-2 focus:ring-[#10B981] focus:border-[#10B981] outline-none text-slate-900 bg-slate-50"
+                <h4 class="text-2xl font-bold text-navy mb-3">Need a Power Backup Quote?</h4>
+                <p class="text-muted mb-6 text-sm">Enter your phone number and we'll call you right back with the best
+                    pricing.</p>
+
+                <form id="modal-lead-form">
+                    <!-- Tells Web3Forms which page they were looking at -->
+                    <input type="hidden" name="subject" value="URGENT: Call Back Request (Batteries Page)">
+
+                    <!-- Added name="phone" -->
+                    <input type="tel" name="phone"
+                        class="w-full px-4 py-3 border border-line rounded-lg mb-4 focus:ring-2 focus:ring-amber focus:border-amber outline-none text-ink bg-gray-50"
                         placeholder="+91 Your Phone Number" required>
-                    <button type="submit"
-                        class="w-full bg-[#10B981] hover:bg-emerald-600 text-white font-bold py-3 px-4 rounded-lg transition-colors shadow-md">
+
+                    <!-- Status Message Container -->
+                    <p id="modal-form-status" class="text-center font-bold text-sm hidden mb-4"></p>
+
+                    <!-- Added id="modal-submit-btn" -->
+                    <button type="submit" id="modal-submit-btn"
+                        class="w-full bg-[#10B981] hover:bg-green-500 text-white font-bold py-3 px-4 rounded-lg transition-colors shadow-md">
                         Get a Free Call Back
                     </button>
+                    <!-- Web3Forms Honeypot Spam Protection (Bots will fill this, humans won't see it) -->
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                 </form>
             </div>
         </div>
+    </div>
     </div>
 
     <!-- Scripts -->

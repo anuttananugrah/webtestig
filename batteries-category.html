@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Silicon Electronics | Earth Power Batteries, Inverters & Solar Dealer in Kerala</title>
     <meta name="description"
-        content="Silicon Electronics — 25 years as a battery and inverter dealer. Earth Power batteries, online UPS, and solar systems. Call +91 85939 97371.">
+        content="Silicon Electronics — 25 years as a battery and inverter dealer. Earth Power batteries, online UPS, and solar systems. Call +91 94468 74250.">
     <script src="https://cdn.tailwindcss.com"></script>
 
     <script type="application/ld+json">
@@ -16,7 +16,7 @@
   "name": "Silicon Electronics",
   "image": "https://res.cloudinary.com/dwhpwlk5m/image/upload/v1786176677/walkers/products/product_1786176676688_czja6.png",
   "description": "Earth Power batteries, inverters, online UPS and solar systems dealer in Kerala.",
-  "telephone": "+918593997371",
+  "telephone": "+919446874250",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Paruvakkunnu Road, Perumpilavu",
@@ -58,15 +58,19 @@
             <!-- Desktop nav -->
             <ul class="hidden md:flex items-center gap-8 text-sm">
                 <li><a href="index.html" class="text-copper font-semibold">Home</a></li>
-                <li><a href="index.html#about" class="text-slate-600 hover:text-copper transition-colors">About us</a></li>
-                <li><a href="index.html#products" class="text-slate-600 hover:text-copper transition-colors">Products</a></li>
-                <li><a href="index.html#gallery" class="text-slate-600 hover:text-copper transition-colors">Work gallery</a></li>
-                <li><a href="index.html#contact" class="text-slate-600 hover:text-copper transition-colors">Contact us</a></li>
+                <li><a href="index.html#about" class="text-slate-600 hover:text-copper transition-colors">About us</a>
+                </li>
+                <li><a href="index.html#products"
+                        class="text-slate-600 hover:text-copper transition-colors">Products</a></li>
+                <li><a href="index.html#gallery" class="text-slate-600 hover:text-copper transition-colors">Work
+                        gallery</a></li>
+                <li><a href="index.html#contact" class="text-slate-600 hover:text-copper transition-colors">Contact
+                        us</a></li>
             </ul>
 
-            <a href="tel:+918593997371"
+            <a href="tel:+919446874250"
                 class="hidden md:inline-block bg-copper text-white text-sm font-bold px-5 py-2.5 rounded hover:bg-[#b06a32] transition whitespace-nowrap shadow-sm">
-                +91 85939 97371
+                +91 94468 74250
             </a>
 
             <!-- Mobile hamburger -->
@@ -92,9 +96,9 @@
                 <li><a href="index.html#gallery" class="text-slate-600 block">Work gallery</a></li>
                 <li><a href="index.html#contact" class="text-slate-600 block">Contact us</a></li>
                 <li class="pt-2">
-                    <a href="tel:+918593997371"
+                    <a href="tel:+919446874250"
                         class="block text-center bg-copper text-white text-sm font-bold px-4 py-3 rounded shadow-sm">Call
-                        +91 85939 97371</a>
+                        +91 94468 74250</a>
                 </li>
             </ul>
         </div>
@@ -132,59 +136,63 @@
 
         <!-- FILTERS -->
         <section class="py-6 md:py-8 border-b border-line">
-            <div class="max-w-7xl mx-auto px-5 md:px-10 flex items-center flex-wrap gap-3">
-                <span class="text-[13px] text-muted mr-2">Filter by voltage:</span>
-                <button
-                    class="bg-navy border border-navy text-amber text-[13px] py-1.5 px-4 rounded-full font-medium">All</button>
-                <button
-                    class="bg-white border border-line text-ink hover:bg-gray-50 text-[13px] py-1.5 px-4 rounded-full transition">12.8V</button>
-                <button
-                    class="bg-white border border-line text-ink hover:bg-gray-50 text-[13px] py-1.5 px-4 rounded-full transition">25.6V</button>
-                <button
-                    class="bg-white border border-line text-ink hover:bg-gray-50 text-[13px] py-1.5 px-4 rounded-full transition">51.2V</button>
-            </div>
-        </section>
-        <section class="py-6 md:py-8 border-b border-line">
-            <div class="max-w-7xl mx-auto px-5 md:px-10 flex flex-wrap items-center gap-3">
+            <div class="max-w-7xl mx-auto px-5 md:px-10">
 
-                <!-- Voltage Filter -->
-                <span class="text-[13px] text-muted mr-1">
-                    Voltage:
-                </span>
+                <!-- Dropdown Container -->
+                <div class="relative inline-block text-left">
 
-                <button class="filter-btn voltage-filter active-filter" data-voltage="all">
-                    All
-                </button>
+                    <!-- Main Filter Toggle Button -->
+                    <button id="filterToggleBtn"
+                        class="flex items-center gap-2 px-4 py-2 bg-gray-100 border border-gray-300 rounded-md hover:bg-gray-200 transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z" />
+                        </svg>
+                        Filters
+                    </button>
 
-                <button class="filter-btn voltage-filter" data-voltage="12.8">
-                    12.8V
-                </button>
+                    <!-- Dropdown Panel (Hidden by default using 'hidden' class) -->
+                    <div id="filterDropdown"
+                        class="hidden absolute left-0 z-10 mt-2 w-72 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 p-4">
 
-                <button class="filter-btn voltage-filter" data-voltage="25.6">
-                    25.6V
-                </button>
+                        <!-- Voltage Filters -->
+                        <div class="mb-4">
+                            <span class="block text-[13px] text-muted mb-2 font-semibold">Voltage:</span>
+                            <div class="flex flex-wrap gap-2">
+                                <button
+                                    class="filter-btn voltage-filter active-filter px-3 py-1 bg-blue-500 text-white rounded text-sm"
+                                    data-voltage="all">All</button>
+                                <button
+                                    class="filter-btn voltage-filter px-3 py-1 bg-gray-100 rounded text-sm hover:bg-gray-200"
+                                    data-voltage="12.8">12.8V</button>
+                                <button
+                                    class="filter-btn voltage-filter px-3 py-1 bg-gray-100 rounded text-sm hover:bg-gray-200"
+                                    data-voltage="25.6">25.6V</button>
+                                <button
+                                    class="filter-btn voltage-filter px-3 py-1 bg-gray-100 rounded text-sm hover:bg-gray-200"
+                                    data-voltage="51.2">51.2V</button>
+                            </div>
+                        </div>
 
-                <button class="filter-btn voltage-filter" data-voltage="51.2">
-                    51.2V
-                </button>
+                        <!-- Capacity (Ah) Filters -->
+                        <div>
+                            <span class="block text-[13px] text-muted mb-2 font-semibold">Capacity:</span>
+                            <div class="flex flex-wrap gap-2">
+                                <button
+                                    class="filter-btn ah-filter active-filter px-3 py-1 bg-blue-500 text-white rounded text-sm"
+                                    data-ah="all">All</button>
+                                <button
+                                    class="filter-btn ah-filter px-3 py-1 bg-gray-100 rounded text-sm hover:bg-gray-200"
+                                    data-ah="105">105Ah</button>
+                                <button
+                                    class="filter-btn ah-filter px-3 py-1 bg-gray-100 rounded text-sm hover:bg-gray-200"
+                                    data-ah="210">210Ah</button>
+                            </div>
+                        </div>
 
-
-                <!-- Ah Filter -->
-                <span class="text-[13px] text-muted ml-4 mr-1">
-                    Capacity:
-                </span>
-
-                <button class="filter-btn ah-filter active-filter" data-ah="all">
-                    All
-                </button>
-
-                <button class="filter-btn ah-filter" data-ah="105">
-                    105Ah
-                </button>
-
-                <button class="filter-btn ah-filter" data-ah="210">
-                    210Ah
-                </button>
+                    </div>
+                </div>
 
             </div>
         </section>
@@ -468,7 +476,8 @@
                         <div>
                             <div class="flex flex-wrap justify-between items-start gap-3 mb-4">
                                 <div>
-                                    <h2 class="text-xl font-bold text-ink">Earth Power 51.2V 105Ah LiFePO4 battery | Parallel Communication</h2>
+                                    <h2 class="text-xl font-bold text-ink">Earth Power 51.2V 105Ah LiFePO4 battery |
+                                        Parallel Communication</h2>
                                     <p class="text-[13px] text-muted mt-1">Model EPL51105ESS</p>
                                 </div>
                                 <span
@@ -552,7 +561,7 @@
                 <div>
                     <h3 class="text-slate-900 text-sm font-bold mb-4">Contact</h3>
                     <ul class="text-[13px] space-y-2 text-slate-600">
-                        <li><a href="tel:+918593997371" class="hover:text-copper transition">+91 85939 97371</a></li>
+                        <li><a href="tel:+919446874250" class="hover:text-copper transition">+91 94468 74250</a></li>
                         <li>Mon&ndash;Sat, 10am&ndash;7pm</li>
                     </ul>
                 </div>
@@ -578,20 +587,35 @@
             </button>
 
             <!-- Form Content -->
+            <!-- Form Content -->
             <div class="text-center">
                 <h4 class="text-2xl font-bold text-navy mb-3">Need a Power Backup Quote?</h4>
                 <p class="text-muted mb-6 text-sm">Enter your phone number and we'll call you right back with the best
                     pricing.</p>
-                <form onsubmit="event.preventDefault(); alert('Request submitted!'); hideModal();">
-                    <input type="tel"
+
+                <form id="modal-lead-form">
+                    <!-- Tells Web3Forms which page they were looking at -->
+                    <input type="hidden" name="subject" value="URGENT: Call Back Request (Batteries Page)">
+
+                    <!-- Added name="phone" -->
+                    <input type="tel" name="phone"
                         class="w-full px-4 py-3 border border-line rounded-lg mb-4 focus:ring-2 focus:ring-amber focus:border-amber outline-none text-ink bg-gray-50"
                         placeholder="+91 Your Phone Number" required>
-                    <button type="submit"
-                        class="w-full bg-[#10B981] hover:bg-green-500 text-white font-bold py-3 px-4 rounded-lg transition-colors shadow-md">Get
-                        a Free Call Back</button>
+
+                    <!-- Status Message Container -->
+                    <p id="modal-form-status" class="text-center font-bold text-sm hidden mb-4"></p>
+
+                    <!-- Added id="modal-submit-btn" -->
+                    <button type="submit" id="modal-submit-btn"
+                        class="w-full bg-[#10B981] hover:bg-green-500 text-white font-bold py-3 px-4 rounded-lg transition-colors shadow-md">
+                        Get a Free Call Back
+                    </button>
+                    \<!-- Web3Forms Honeypot Spam Protection (Bots will fill this, humans won't see it) -->
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                 </form>
             </div>
         </div>
+    </div>
     </div>
 
     <!-- SCRIPTS -->
